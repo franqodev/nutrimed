@@ -2,10 +2,10 @@ import { connect } from "react-redux"
 import { NavLink } from "react-router-dom"
 import userActions from "../redux/actions/userActions"
 
-const Footer = (props) => {
+const Footer = ({logOut,valid}) => {
 
    const outHandler = () => {
-      props.logOut()
+      logOut()
    }
 
     return (
@@ -23,22 +23,22 @@ const Footer = (props) => {
                      <p>HOME</p>
                   </NavLink>
                </li>
-               {!props.valid && <li>
+               {!valid && <li>
                   <NavLink to="/signup">
                      <p>CREAR CUENTA</p>
                   </NavLink>
                </li>}
-               {!props.valid && <li>
+               {!valid && <li>
                   <NavLink to="/signin">
                      <p>INGRESAR</p>
                   </NavLink>
                </li>}
-               {props.valid && <li>
+               {valid && <li>
                   <NavLink to="/profile">
                      <p>PERFIL</p>
                   </NavLink>
                </li>}
-               {props.valid && <li>
+               {valid && <li>
                   <NavLink onClick={outHandler} to="/" >
                      <p>SALIR</p>
                   </NavLink>
