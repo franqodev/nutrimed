@@ -386,6 +386,7 @@ h4 {
   position: absolute;
   top: 120px;
   border: solid #f0f3f5 10px;
+  background-color: #f0f3f5;
 }
 .docCardText {
   background-color: #71cbe3;

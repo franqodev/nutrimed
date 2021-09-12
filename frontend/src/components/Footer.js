@@ -19,27 +19,27 @@ const Footer = ({logOut,valid}) => {
             <div className="footerNavbar">
             <ul>
                <li>
-                  <NavLink exact to="/">
+                  <NavLink exact to="/" onClick={() => window.scrollTo(0, 0)}>
                      <p>HOME</p>
                   </NavLink>
                </li>
                {!valid && <li>
-                  <NavLink to="/signup">
+                  <NavLink to="/signup" onClick={() => window.scrollTo(0, 0)}>
                      <p>CREAR CUENTA</p>
                   </NavLink>
                </li>}
                {!valid && <li>
-                  <NavLink to="/signin">
+                  <NavLink to="/signin" onClick={() => window.scrollTo(0, 0)}>
                      <p>INGRESAR</p>
                   </NavLink>
                </li>}
                {valid && <li>
-                  <NavLink to="/profile">
+                  <NavLink to="/profile" onClick={() => window.scrollTo(0, 0)}>
                      <p>PERFIL</p>
                   </NavLink>
                </li>}
                {valid && <li>
-                  <NavLink onClick={outHandler} to="/" >
+                  <NavLink onClick={outHandler} to="/" onClick={() => window.scrollTo(0, 0)}>
                      <p>SALIR</p>
                   </NavLink>
                </li>}
