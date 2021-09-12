@@ -502,6 +502,7 @@ h4 {
 
 .iconTurn {
   width: 50px;
+  cursor: pointer;
 }
 
 .hour {
@@ -598,7 +599,7 @@ h4 {
 }
 
 .full {
-  background-color: rgb(160, 160, 160);
+  background-color: #b8b8b8;
 }
 .clickDay {
   background-color: #1bb6d1;
@@ -792,11 +793,14 @@ input.inputAvatar:focus {
   outline: none;
   width: 40vw;
   height: 8vh;
-  border: 1px gray solid;
-  padding: 0.5rem 1rem;
-  margin: 1rem;
   overflow: auto;
   font-size: 15px;
+  padding: 15px;
+  background-color: #f4f5f7;
+  margin: 8px;
+  border-radius: 10px;
+  border: none;
+  color: black
 }
 
 .textarea {
@@ -858,14 +862,14 @@ input.inputAvatar:focus {
   margin-left: 1rem;
 }
 
-.editProfile {
+#editProfile {
   cursor: pointer;
   padding: 3px 15px;
-  margin: 5px;
+  margin: 20px 15px;
   border-radius: 30px;
   background-color: #71cbe3;
   color: white;
-  font-size: smaller;
+  font-size: small;
 }
 
 .deleteAccount {
@@ -880,6 +884,19 @@ text-align: center;
 #buttonDeleteProfile {
   padding: 4px 16px;
   margin-top: 6px
+}
+
+#buttonDeleteProfile2 {
+  padding: 4px 16px;
+  margin-top: 6px;
+  background-color: #FF6B6B
+}
+
+#deleteAccountDoc {
+  background-color: #b8b8b8;
+  padding: 4px 16px;
+  margin-top: 6px;
+  font-size: small;
 }
 
 .registroNotas {
@@ -1278,11 +1295,6 @@ text-align: center;
   background-size: cover;
   border-radius: 100%;
   margin-left: 1rem;
-}
-
-.editProfile {
-  cursor: pointer;
-  padding: 7px;
 }
 
 .sinCompletar {

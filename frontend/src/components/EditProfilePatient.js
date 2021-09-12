@@ -84,7 +84,7 @@ const EditProfilePatient = ({
       if (res.success) {
         history.push("/profile");
       }else{
-        setTextError('No se pudieron actualizar los datos, intentelo mas tarde')
+        setTextError('No se pudieron actualizar los datos. Por favor, intentalo más tarde.')
       }
     });
   };
@@ -99,8 +99,8 @@ const EditProfilePatient = ({
         <img src="/assets/form.png" alt="" />
         <h3>Por favor, completá tus datos</h3>
         {!validEdit ? (
-          <span className="editProfile" onClick={editHandler}>
-            Editar
+          <span id="editProfile" onClick={editHandler}>
+            EDITAR
           </span>
         ) : (
           <Link to="/profile">Cancelar y volver al perfil</Link>
@@ -205,7 +205,7 @@ const EditProfilePatient = ({
             </div>
           )}
         </form>
-        {validEdit && <button onClick={submitHandler}>Actualizar datos</button>}
+        {validEdit && <button onClick={submitHandler}>ACTUALIZAR DATOS</button>}
         <div>
           <Link to="/profile">Volver al perfil</Link>
         </div>

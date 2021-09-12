@@ -123,7 +123,7 @@ const ProfileUser = ({
           </Link>
         </button>
         {doc && !deleteDoctor && (
-          <button onClick={() => setDeleteDoctor(!deleteDoctor)}>
+          <button id="deleteAccountDoc" onClick={() => setDeleteDoctor(!deleteDoctor)}>
             ELIMINAR CUENTA
           </button>
         )}
@@ -140,7 +140,7 @@ const ProfileUser = ({
               CANCELAR
             </button>
             <button
-              id="buttonDeleteProfile"
+              id="buttonDeleteProfile2"
               onClick={() => {
                 deletDoctor();
               }}
@@ -155,7 +155,7 @@ const ProfileUser = ({
         <h3 className="tituloProfile">Mis datos</h3>
           <div>
             <p>
-              <span className="datosBold">Nombre:</span>
+              <span className="datosBold">Nombre:</span>{" "}
               {name}
             </p>
             <p>

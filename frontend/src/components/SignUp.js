@@ -93,12 +93,12 @@ const SignUp = ({ signUpUser, getAvatars }) => {
             ? res.res.includes("uso")
               ? setErrors([{ message: res.res }]) &&
                 setError({ errorTwo: true })
-              : setErrors([{ message: "Ups! intentelo mas tarde" }])
+              : setErrors([{ message: "Ups! Intentalo más tarde." }])
             : setErrors(res.res);
         }
       });
     } else if (valor > 1) {
-      setErrors([{ message: "Debes completar este dato" }]);
+      setErrors([{ message: "Debes completar este dato." }]);
     } else setErrors([{ message: "" }]);
   };
 
@@ -319,7 +319,7 @@ return(
               </div>
             </div>
             <div className="forError">
-              <input type="password" placeholder="Repita su contraseña" name="validPassword" onBlur={verifyPassword} onChange={addUserHandler} defaultValue={newUser.validPassword}/>
+              <input type="password" placeholder="Repetí tu contraseña" name="validPassword" onBlur={verifyPassword} onChange={addUserHandler} defaultValue={newUser.validPassword}/>
               <div data-tip data-for="buttonError5" className='cross2'>
                   {(((error.errorT && !newUser.validPassword.length && mensaje6) ||  mensaje6) && !mensaje8 )
                   && <img className='cross2' src="/assets/cross2.png" alt="..."/>}
