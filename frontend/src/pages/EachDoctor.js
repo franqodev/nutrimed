@@ -7,7 +7,7 @@ import Score from "../components/Score";
 
 class EachDoctor extends Component {
   state = {
-    loading: { condition: true, text: "", back: "" , gif:true},
+    loading: { condition: true, text: "", back: "", gif:true},
     socket: null,
     newScore: [],
   };
